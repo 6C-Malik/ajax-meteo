@@ -1,0 +1,157 @@
+.clear {
+  background-image: url(https://images.unsplash.com/photo-1590372648787-fa5a935c2c40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80);
+  background-size: cover;
+}
+
+.clouds {
+  background-image: url(https://images.unsplash.com/photo-1525776759712-7b066ce45de0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1738&q=80);
+  background-size: cover;
+}
+
+.rain {
+  background-image: url(https://images.unsplash.com/photo-1534274988757-a28bf1a57c17?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80);
+  background-size: cover;
+}
+
+.snow {
+  background-image: url(https://images.unsplash.com/photo-1547754980-3df97fed72a8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+  background-size: cover;
+}
+
+.mist {
+  background-image: url(https://images.unsplash.com/photo-1485236715568-ddc5ee6ca227?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+  background-size: cover;
+}
+
+.drizzle {
+  background-image: url(https://images.unsplash.com/photo-1600415684478-744cf4f8f8d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80);
+  background-size: cover;
+}
+
+body {
+  background: #c2e59c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #64b3f4,
+    #c2e59c
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #64b3f4,
+    #c2e59c
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-repeat: no-repeat;
+  
+
+  font-family: "Inter", sans-serif;
+  /* text-align: center; */
+  height: 100vh;
+  overflow: hidden;
+  /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: 500;
+    text-decoration: underline;
+    text-align: center;
+}
+
+h2 {
+  margin-top: 0px;
+  font-size: 3em;
+  font-weight: 500;
+  position: relative;
+  border: 3px solid rgb(248, 248, 248);
+  padding: 5px;
+  border-radius: 10px;
+  transition: .5s;
+}
+
+h2:hover {
+    transform: scale(1.1);
+}
+
+
+i.wi {
+  font-size: 5em;
+  line-height: 3em;
+}
+
+h3 {
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.tooltip {
+  opacity: 0;
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  color: #fff;
+  background-color:#222 ;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 12px;
+  transition: opacity .3s, top .5s;
+}
+
+h2:hover .tooltip {
+    top: 80px;
+    opacity: 1;
+}
+/* The device with borders */
+.smartphone {
+  position: relative;
+  width: 360px;
+  height: 640px;
+  margin: 50px auto;
+  border: 16px black solid;
+  border-top-width: 60px;
+  border-bottom-width: 60px;
+  border-radius: 36px;
+}
+
+/* The horizontal line on the top of the device */
+.smartphone:before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 5px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 10px;
+}
+
+/* The circle on the bottom of the device */
+.smartphone:after {
+  content: "";
+  display: block;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 50%;
+  bottom: -65px;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 50%;
+}
+
+/* The screen (or content) of the device */
+.smartphone .content {
+  width: 360px;
+  height: 640px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* background: white; */
+}
